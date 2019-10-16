@@ -53,6 +53,7 @@ UserSchema.methods.checkPass = function(senha){
 
 //MODEL PRECISA SER ASSOCIADO DEPOIS DE UserSchema.pre
 //pra poder ligar o schema inteiro com a funcao (pre save) no model
+//e tambem pra ter o método checkPass incluido
 const User = mongoose.model('User', UserSchema)
 
 module.exports = User

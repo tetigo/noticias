@@ -30,7 +30,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }))
-
+//não esquecer que a ordem IMPORTA
 app.use('/', auth)
 app.use('/', pages)
 

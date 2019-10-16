@@ -3,6 +3,9 @@ const router = express.Router()
 
 const Noticia = require('../models/noticia')
 
+//não está associado com nenhum endpoint então é
+//chamado sempre que alguem tentar acessar 
+//qualquer rota restrita e redirecionado de acordo
 router.use((req, res, next)=>{
     if('user' in req.session){
         if(req.session.user.roles.indexOf('restrito') >= 0){

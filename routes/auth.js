@@ -2,7 +2,9 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
 
-
+//usado sempre
+//chamado em tudo, toda vez
+//pois está associado a todas as rotas
 router.use((req, res, next)=>{
     if('user' in req.session){
         res.locals.user = req.session.user
