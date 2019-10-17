@@ -1,7 +1,7 @@
 # Notícias
 
 
-Simples aplicativo que mostra mensagens públicas, privadas e administrativas de acordo com autenticação e autorização.
+Simples aplicativo que mostra mensagens públicas, privadas e administrativas de acordo com autenticação e autorização sendo feitas diretamente na session sem utilizar Passport.
 
 Usuários anônimos conseguem ver notícias públicas.
 
